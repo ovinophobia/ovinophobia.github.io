@@ -63,6 +63,10 @@ python -m venv .venv
 
 ## 发布到 GitHub Pages
 
+GitHub 仓库：https://github.com/ovinophobia/ovinophobia.github.io
+
+发布成功后的网站地址：https://ovinophobia.github.io/
+
 `.github/workflows/ci.yml` 会在每次推送到 `main` 分支时自动安装依赖、检查构建，再把生成的网站发布到 `gh-pages` 分支。也可以在 GitHub 仓库的 Actions 页面手动运行工作流。
 
 首次推送后，按以下步骤配置：

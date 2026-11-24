@@ -19,6 +19,10 @@ theme:
 nav:
   - 主页: index.md
   - 课程: course/index.md
+  - 一路走来:
+      - 今日大学习: journey/study/index.md
+      - 随记: journey/notes/index.md
+      - 足迹: journey/footprints/index.md
   - 友链: friends/index.md
   - 关于: about/index.md
 

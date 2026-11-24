@@ -21,6 +21,9 @@
 | 主页中央的大字 | `docs/index.md` 中的“我的网站名称” |
 | 课程简介和文章列表 | `docs/course/index.md` |
 | 示例课程文章 | `docs/course/example.md` |
+| 今日大学习 | `docs/journey/study/index.md` |
+| 随记 | `docs/journey/notes/index.md` |
+| 足迹 | `docs/journey/footprints/index.md` |
 | 友情链接 | `docs/friends/index.md` |
 | 自我介绍 | `docs/about/index.md` |
 | 字号、颜色和页面布局 | `docs/stylesheets/extra.css` |
@@ -42,6 +45,15 @@
 6. 保存后，在浏览器点击“课程”，即可通过文章列表进入新文章。
 
 Markdown 常用写法：`# 大标题`、`## 小标题`、`**加粗**`、`- 列表项目`、`[链接名称](网址)`。标题的井号和文字之间要留一个空格。
+
+## 在“一路走来”中写文章
+
+导航中的“一路走来”包含“今日大学习”“随记”“足迹”三个子栏目。
+
+1. 根据内容打开 `docs/journey/study`（今日大学习）、`docs/journey/notes`（随记）或 `docs/journey/footprints`（足迹）。
+2. 在对应文件夹中创建一篇 `.md` 文章，例如 `first-note.md`。可以复制课程的 `example.md`，再修改内容。
+3. 打开同一文件夹里的 `index.md`，把等待第一篇内容的占位文字换成文章链接，例如 `- [我的第一篇记录](first-note.md)`。
+4. 保存后查看本地预览。提交并推送到 GitHub 后，线上网站会自动更新。
 
 ## 如果以后需要重新安装环境
 

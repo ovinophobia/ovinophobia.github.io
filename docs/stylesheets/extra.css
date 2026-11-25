@@ -49,3 +49,40 @@ body {
 body:has(.home-hero) .md-footer {
   display: none;
 }
+
+
+/* 正文：字号和行距 */
+.md-typeset {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* 一级标题，例如“今日大学习” */
+.md-typeset h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 24px;
+}
+
+/* 二级标题，例如“2026” */
+.md-typeset h2 {
+  font-size: 26px;
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
+/* 列表中每一项的间距 */
+.md-typeset ul li {
+  margin-bottom: 8px;
+}
+
+/* 左侧导航和右侧目录的字号 */
+.md-nav {
+  font-size: 16px;
+}
+
+/* 网站整体内容区域的最大宽度 */
+.md-grid {
+  max-width: 1280px;
+}

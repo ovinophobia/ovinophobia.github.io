@@ -75,6 +75,20 @@ python -m venv .venv
 
 ## 发布到 GitHub Pages
 
+### 双击上传网站内容
+
+1. 写好文章或调整样式，保存文件。
+2. 回到项目最外层目录 `D:\MY-website`，双击 `upload.cmd`（隐藏扩展名时显示为 `upload`）。
+3. 输入 `1` 并回车，使用提交说明 `daily update`；也可以直接回车。
+4. 如果希望自己写说明，输入 `2` 并回车，再输入说明并回车。
+5. 等窗口显示“推送成功”，按任意键关闭窗口。GitHub 自动发布后即可访问网站。
+
+脚本会添加并提交 `docs` 中的文章、图片和样式改动，然后执行 `git push`。`mkdocs.yml` 等位于 `docs` 外的文件需要单独提交。`scripts/upload.ps1` 是启动文件依赖的实现，请一起保留。
+
+如果没有新的内容改动，脚本会跳过创建提交，继续推送已有的本地提交。出错时窗口会保留错误提示，便于查看原因。
+
+### 发布配置
+
 GitHub 仓库：https://github.com/ovinophobia/ovinophobia.github.io
 
 发布成功后的网站地址：https://ovinophobia.github.io/

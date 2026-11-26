@@ -1,6 +1,8 @@
 # 今日大学习
 
-Everyday 
+学习英语和日语ing。每天尝试使用外语写一句或者一段话。
+
+Trying to write something everyday, in a foreign language.
 
 ## 2026
 

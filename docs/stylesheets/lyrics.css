@@ -1,0 +1,18 @@
+/* 为假名注音留出空间，样式只用于歌词正文。 */
+.md-typeset .lyrics {
+  line-height: 2.6;
+}
+
+.md-typeset .lyrics p {
+  margin: 0 0 1.8em;
+}
+
+.lyrics ruby {
+  ruby-position: over;
+}
+
+.lyrics rt {
+  font-size: 0.55em;
+  font-weight: 400;
+  line-height: 1;
+}

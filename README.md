@@ -24,6 +24,8 @@
 | 今日大学习 | `docs/journey/study/index.md` |
 | 随记 | `docs/journey/notes/index.md` |
 | 足迹 | `docs/journey/footprints/index.md` |
+| 歌词列表 | `docs/lyrics/index.md` |
+| God Knows 歌词与假名注音 | `docs/lyrics/god-knows.md` |
 | 友情链接 | `docs/friends/index.md` |
 | 自我介绍 | `docs/about/index.md` |
 | 字号、颜色和页面布局 | `docs/stylesheets/extra.css` |

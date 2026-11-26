@@ -1,4 +1,6 @@
 :root {
+  /* 始终预留滚动条位置，避免切换长短页面时左右跳动。 */
+  scrollbar-gutter: stable;
   --md-default-bg-color: #ffffff;
   --md-text-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
 }

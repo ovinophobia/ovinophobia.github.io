@@ -20,24 +20,22 @@
 
 实验报告中图片插入的方法：用的overleaf，左上角设置把编译器改成XeLaTeX，代码如下：
 
-\begin{center}
-
-    \begin{minipage}{0.7（数字用来调整图片大小）\columnwidth}
-
-        \centering
-
-        \includegraphics[width=\textwidth]{output2.png（文件名）}    
-
-        \vspace{0.5em}
-
-        \stepcounter{figure}
-
-        \label{fig:ground_truth}
-
-        \noindent\textbf{Figure~\arabic{figure}:} \small{实验一迷宫设计图（图名）} 
-
-    \end{minipage}
-    
-\end{center}
+!!! note "代码"
+    ```latex
+    \begin{center}
+        % 修改 0.7 可以调整图片大小
+        \begin{minipage}{0.7\columnwidth}
+            \centering
+            % 替换为实际图片文件名
+            \includegraphics[width=\textwidth]{output2.png}
+            \vspace{0.5em}
+            \stepcounter{figure}
+            \label{fig:ground_truth}
+            % 在这里修改图名
+            \noindent\textbf{Figure~\arabic{figure}:}
+            \small{实验一迷宫设计图}
+        \end{minipage}
+    \end{center}
+    ```
 
 [返回专业课程列表](index.md)

@@ -32,19 +32,43 @@
 
 网站名称现在是 `ovino`；主页中央显示的是按要求保留的“我的网站名称”，两者可以分别修改。
 
+## 填写课程模板
+
+“课程”已分为“专业课程”“通识课程”“其他”三个栏目。13 门课程的独立文件均已建好。
+
+| 课程 | 文件 |
+| --- | --- |
+| 生物医学信号处理 | `docs/course/major/biomedical-signal-processing.md` |
+| 生物医学成像技术 | `docs/course/major/biomedical-imaging.md` |
+| 嵌入式系统 | `docs/course/major/embedded-systems.md` |
+| 高级程序设计 | `docs/course/major/advanced-programming.md` |
+| 生物医学传感与检测 | `docs/course/major/biomedical-sensing-and-detection.md` |
+| 生物医学图像处理 | `docs/course/major/biomedical-image-processing.md` |
+| 仪器系统设计 | `docs/course/major/instrument-system-design.md` |
+| 硬件描述语言 | `docs/course/major/hardware-description-language.md` |
+| 电子系统设计与实践 | `docs/course/major/electronic-system-design-and-practice.md` |
+| 模式识别与机器学习基础 | `docs/course/major/pattern-recognition-and-machine-learning.md` |
+| 生产实习 | `docs/course/major/production-internship.md` |
+| 毛概 | `docs/course/general/mao-gai.md` |
+| 习概 | `docs/course/general/xi-gai.md` |
+
+用文本编辑器打开对应文件，把“待填写”“待补充”替换成自己的内容。开头依次是任课教师、学分、课程类别、成绩、学期，随后填写课程总结、建议与教师评价，末尾整理相关资料。
+
+已有课程只需要修改正文；保存后可双击 `start-preview.cmd` 预览，再双击 `upload.cmd` 提交并上传。
+
 ## 新增课程文章
 
-1. 打开 `docs\course` 文件夹。
-2. 选中 `example.md`，按 `Ctrl+C`，再按 `Ctrl+V` 复制一份。
+1. 根据分类打开 `docs/course/major`、`docs/course/general` 或 `docs/course/other` 文件夹。
+2. 选中一篇课程文件，按 `Ctrl+C`，再按 `Ctrl+V` 复制一份；“其他”分类可从 `docs/course/example.md` 复制示例。
 3. 选中副本，按 `F2`，改名为 `lesson-01.md`，保留 `.md` 后缀。
 4. 用文本编辑器打开新文件，修改标题和内容，按 `Ctrl+S` 保存。
-5. 打开 `docs/course/index.md`，在文章列表下面增加一行：
+5. 打开同一分类文件夹里的 `index.md`，在列表下面增加一行：
 
    ```markdown
    - [我的第一课](lesson-01.md) — 这一课的简单介绍。
    ```
 
-6. 保存后，在浏览器点击“课程”，即可通过文章列表进入新文章。
+6. 保存后，在浏览器点击“课程”并选择分类，即可通过列表进入新文章。如果还要把新文章放进左侧导航，需在 `mkdocs.yml` 的对应分类中增加一项；修改该配置后需要把 `mkdocs.yml` 单独提交。
 
 Markdown 常用写法：`# 大标题`、`## 小标题`、`**加粗**`、`- 列表项目`、`[链接名称](网址)`。标题的井号和文字之间要留一个空格。
 

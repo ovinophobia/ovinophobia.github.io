@@ -12,13 +12,35 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.indexes
     - navigation.top
     - content.code.copy
   font: false
 
 nav:
   - 主页: index.md
-  - 课程: course/index.md
+  - 课程:
+      - course/index.md
+      - 专业课程:
+          - course/major/index.md
+          - 生物医学信号处理: course/major/biomedical-signal-processing.md
+          - 生物医学成像技术: course/major/biomedical-imaging.md
+          - 嵌入式系统: course/major/embedded-systems.md
+          - 高级程序设计: course/major/advanced-programming.md
+          - 生物医学传感与检测: course/major/biomedical-sensing-and-detection.md
+          - 生物医学图像处理: course/major/biomedical-image-processing.md
+          - 仪器系统设计: course/major/instrument-system-design.md
+          - 硬件描述语言: course/major/hardware-description-language.md
+          - 电子系统设计与实践: course/major/electronic-system-design-and-practice.md
+          - 模式识别与机器学习基础: course/major/pattern-recognition-and-machine-learning.md
+          - 生产实习: course/major/production-internship.md
+      - 通识课程:
+          - course/general/index.md
+          - 毛概: course/general/mao-gai.md
+          - 习概: course/general/xi-gai.md
+      - 其他:
+          - course/other/index.md
+          - 示例课程: course/example.md
   - 一路走来:
       - 今日大学习: journey/study/index.md
       - 随记: journey/notes/index.md

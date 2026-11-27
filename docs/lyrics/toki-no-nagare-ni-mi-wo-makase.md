@@ -53,3 +53,4 @@ hide:
 </div>
 
 [返回歌词列表](index.md)
+{ .article-backlink }

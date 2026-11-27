@@ -57,6 +57,15 @@
 
 ## 新增课程文章
 
+所有新文章末尾都应使用统一的返回区域：上方有细分隔线，链接下方留有空白。可以复制 `templates/article.md` 到对应栏目文件夹中再填写正文。
+
+```markdown
+[返回所属栏目](index.md)
+{ .article-backlink }
+```
+
+属性行 `{ .article-backlink }` 必须紧接链接行，不要在两行之间加空行。链接路径按文章位置填写；分隔线和底部空白由样式自动生成，不必再加 `---`。这条规则也已记录在项目根目录的 `AGENTS.md`，以后生成文章时遵循。
+
 1. 根据分类打开 `docs/course/major`、`docs/course/general` 或 `docs/course/other` 文件夹。
 2. 选中一篇课程文件，按 `Ctrl+C`，再按 `Ctrl+V` 复制一份；“其他”分类也可以复制任意已有课程文件后修改。
 3. 选中副本，按 `F2`，改名为 `lesson-01.md`，保留 `.md` 后缀。

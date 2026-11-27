@@ -14,3 +14,4 @@
 实验记得早点做完。
 
 [返回专业课程列表](index.md)
+{ .article-backlink }

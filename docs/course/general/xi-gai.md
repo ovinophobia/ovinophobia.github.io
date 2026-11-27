@@ -16,3 +16,4 @@
 开卷，记得带齐资料，多写点
 
 [返回通识课程列表](index.md)
+{ .article-backlink }

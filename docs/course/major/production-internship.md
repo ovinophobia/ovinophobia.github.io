@@ -15,3 +15,4 @@
 详细的过程可以看我的[记录帖](https://www.cc98.org/topic/6567770){ target="_blank" rel="noopener noreferrer" }
 
 [返回专业课程列表](index.md)
+{ .article-backlink }

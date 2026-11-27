@@ -18,3 +18,4 @@
 我自己写的[回忆卷](https://www.cc98.org/topic/6553600){ target="_blank" rel="noopener noreferrer" }
 
 [返回专业课程列表](index.md)
+{ .article-backlink }

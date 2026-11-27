@@ -15,3 +15,4 @@
 - [生产实习](production-internship.md)
 
 [返回课程首页](../index.md)
+{ .article-backlink }

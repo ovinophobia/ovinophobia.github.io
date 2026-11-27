@@ -59,4 +59,4 @@ my way <ruby>重<rt>かさ</rt></ruby>なるよ<br>
 </div>
 
 [返回歌词列表](index.md)
-
+{ .article-backlink }

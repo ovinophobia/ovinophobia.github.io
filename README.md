@@ -20,7 +20,6 @@
 | 网站名称、导航和主题 | `mkdocs.yml` |
 | 主页中央的大字 | `docs/index.md` 中的“我的网站名称” |
 | 课程简介和文章列表 | `docs/course/index.md` |
-| 示例课程文章 | `docs/course/example.md` |
 | 今日大学习 | `docs/journey/study/index.md` |
 | 随记 | `docs/journey/notes/index.md` |
 | 足迹 | `docs/journey/footprints/index.md` |
@@ -59,7 +58,7 @@
 ## 新增课程文章
 
 1. 根据分类打开 `docs/course/major`、`docs/course/general` 或 `docs/course/other` 文件夹。
-2. 选中一篇课程文件，按 `Ctrl+C`，再按 `Ctrl+V` 复制一份；“其他”分类可从 `docs/course/example.md` 复制示例。
+2. 选中一篇课程文件，按 `Ctrl+C`，再按 `Ctrl+V` 复制一份；“其他”分类也可以复制任意已有课程文件后修改。
 3. 选中副本，按 `F2`，改名为 `lesson-01.md`，保留 `.md` 后缀。
 4. 用文本编辑器打开新文件，修改标题和内容，按 `Ctrl+S` 保存。
 5. 打开同一分类文件夹里的 `index.md`，在列表下面增加一行：
@@ -77,7 +76,7 @@ Markdown 常用写法：`# 大标题`、`## 小标题`、`**加粗**`、`- 列�
 导航中的“一路走来”包含“今日大学习”“随记”“足迹”三个子栏目。
 
 1. 根据内容打开 `docs/journey/study`（今日大学习）、`docs/journey/notes`（随记）或 `docs/journey/footprints`（足迹）。
-2. 在对应文件夹中创建一篇 `.md` 文章，例如 `first-note.md`。可以复制课程的 `example.md`，再修改内容。
+2. 在对应文件夹中创建一篇 `.md` 文章，例如 `first-note.md`。可以复制一篇已有记录，再修改标题和正文。
 3. 打开同一文件夹里的 `index.md`，把等待第一篇内容的占位文字换成文章链接，例如 `- [我的第一篇记录](first-note.md)`。
 4. 保存后查看本地预览。提交并推送到 GitHub 后，线上网站会自动更新。
 
@@ -105,13 +104,21 @@ python -m venv .venv
 
 1. 写好文章或调整样式，保存文件。
 2. 回到项目最外层目录 `D:\MY-website`，双击 `upload.cmd`（隐藏扩展名时显示为 `upload`）。
-3. 输入 `1` 并回车，使用提交说明 `daily update`；也可以直接回车。
+3. 脚本先检查网站能否正常构建。通过后，输入 `1` 并回车，使用提交说明 `daily update`；也可以直接回车。
 4. 如果希望自己写说明，输入 `2` 并回车，再输入说明并回车。
-5. 等窗口显示“推送成功”，按任意键关闭窗口。GitHub 自动发布后即可访问网站。
+5. 等窗口显示“代码已与 GitHub 同步”，按任意键关闭窗口。打开仓库的 **Actions**，等最新 **Publish MkDocs to GitHub Pages** 显示绿色对勾，再访问网站。
 
 脚本会添加并提交 `docs` 中的文章、图片和样式改动，然后执行 `git push`。`mkdocs.yml` 等位于 `docs` 外的文件需要单独提交。`scripts/upload.ps1` 是启动文件依赖的实现，请一起保留。
 
 如果没有新的内容改动，脚本会跳过创建提交，继续推送已有的本地提交。出错时窗口会保留错误提示，便于查看原因。
+
+### 代码已推送，网站却没有更新
+
+`Everything up-to-date` 仅表示代码已经同步，不表示网站发布成功，也不会重新触发之前失败的工作流。请打开仓库 **Actions**，查看最新发布任务是否出现红叉。
+
+删除文章时，需要同时删除 `mkdocs.yml` 中对应的导航，以及其他文章里指向它的链接。脚本会在提交前运行 `mkdocs build --strict`，遇到构建错误就停止。
+
+如果只是网络等临时问题，可以打开失败的工作流，点击 **Re-run all jobs** 重新运行。若是文件或配置错误，应先修复、提交并推送；新的提交会触发一次新的发布。
 
 ### 发布配置
 

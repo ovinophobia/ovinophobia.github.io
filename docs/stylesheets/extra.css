@@ -1,6 +1,8 @@
 :root {
   /* 始终预留滚动条位置，避免切换长短页面时左右跳动。 */
   scrollbar-gutter: stable;
+  /* 电脑端导航向右移动的距离，可按喜好修改。 */
+  --site-nav-offset: 40px;
   --md-default-bg-color: #ffffff;
   --md-text-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
 }
@@ -87,4 +89,19 @@ body:has(.home-hero) .md-footer {
 /* 网站整体内容区域的最大宽度 */
 .md-grid {
   max-width: 1280px;
+}
+
+/* 顶部横向导航和左侧导航显示时，增加相同的左侧留白。 */
+@media screen and (min-width: 76.25em) {
+  .md-header__inner {
+    padding-inline-start: calc(0.2rem + var(--site-nav-offset));
+  }
+
+  .md-tabs__list {
+    padding-inline-start: var(--site-nav-offset);
+  }
+
+  .md-sidebar--primary .md-nav--primary {
+    padding-inline-start: var(--site-nav-offset);
+  }
 }

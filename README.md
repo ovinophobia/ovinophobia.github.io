@@ -33,7 +33,7 @@
 
 ## 填写课程模板
 
-“课程”已分为“专业课程”“通识课程”“其他”三个栏目。13 门课程的独立文件均已建好。
+“课程”已分为“专业课程”“通识课程”“其他”三个栏目，课程与文章的文件位置如下。
 
 | 课程 | 文件 |
 | --- | --- |
@@ -48,10 +48,15 @@
 | 电子系统设计与实践 | `docs/course/major/electronic-system-design-and-practice.md` |
 | 模式识别与机器学习基础 | `docs/course/major/pattern-recognition-and-machine-learning.md` |
 | 生产实习 | `docs/course/major/production-internship.md` |
+| 生物医学光学成像前沿导论 | `docs/course/major/biomedical-optical-imaging-frontiers.md` |
 | 毛概 | `docs/course/general/mao-gai.md` |
 | 习概 | `docs/course/general/xi-gai.md` |
+| 关于学校的日语通识课程 | `docs/course/other/university-japanese-courses.md` |
+| 生仪学院暑期NUS交流 | `docs/course/other/nus-summer-exchange.md` |
 
 用文本编辑器打开对应文件，把“待填写”“待补充”替换成自己的内容。开头依次是任课教师、学分、课程类别、成绩、学期，随后填写课程总结、建议与教师评价，末尾整理相关资料。
+
+“关于学校的日语通识课程”和“生仪学院暑期NUS交流”使用基础文章模板，直接填写正文即可。
 
 已有课程只需要修改正文；保存后可双击 `start-preview.cmd` 预览，再双击 `upload.cmd` 提交并上传。
 

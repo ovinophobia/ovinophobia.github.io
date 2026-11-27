@@ -34,12 +34,15 @@ nav:
           - 电子系统设计与实践: course/major/electronic-system-design-and-practice.md
           - 模式识别与机器学习基础: course/major/pattern-recognition-and-machine-learning.md
           - 生产实习: course/major/production-internship.md
+          - 生物医学光学成像前沿导论: course/major/biomedical-optical-imaging-frontiers.md
       - 通识课程:
           - course/general/index.md
           - 毛概: course/general/mao-gai.md
           - 习概: course/general/xi-gai.md
       - 其他:
           - course/other/index.md
+          - 关于学校的日语通识课程: course/other/university-japanese-courses.md
+          - 生仪学院暑期NUS交流: course/other/nus-summer-exchange.md
   - 一路走来:
       - 今日大学习: journey/study/index.md
       - 随记: journey/notes/index.md

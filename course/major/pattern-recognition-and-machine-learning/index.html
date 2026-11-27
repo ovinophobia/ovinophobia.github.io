@@ -1556,24 +1556,24 @@
 <p>内容方面把老师要求的都做了应该拿个80+还是容易的，但要是想拿90+就真的需要很详尽的分析，还需要你真的对实验有些想法或者说是巧思。个人体验是实验设计大于实验内容，如果能想到一些实验要求之外的设计进行研究应该是加大分的，但是这种“巧思”和创造就不是你主观上想做就能做到的了。</p>
 <p>以及，每个实验都很费时间，我基本上一天调代码，一天写报告，中间还有很多零碎的时间也在做。</p>
 <p>实验报告中图片插入的方法：用的overleaf，左上角设置把编译器改成XeLaTeX，代码如下：</p>
-<p>\begin{center}</p>
-<div class="highlight"><pre><span></span><code>\begin{minipage}{0.7（数字用来调整图片大小）\columnwidth}
-
-    \centering
-
-    \includegraphics[width=\textwidth]{output2.png（文件名）}
-
-    \vspace{0.5em}
-
-    \stepcounter{figure}
-
-    \label{fig:ground_truth}
-
-    \noindent\textbf{Figure~\arabic{figure}:} \small{实验一迷宫设计图（图名）}
-
-\end{minipage}
+<div class="admonition note">
+<p class="admonition-title">代码</p>
+<div class="highlight"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span>
+    <span class="c">% 修改 0.7 可以调整图片大小</span>
+    <span class="k">\begin</span><span class="nb">{</span>minipage<span class="nb">}{</span>0.7<span class="k">\columnwidth</span><span class="nb">}</span>
+        <span class="k">\centering</span>
+        <span class="c">% 替换为实际图片文件名</span>
+        <span class="k">\includegraphics</span><span class="na">[width=\textwidth]</span><span class="nb">{</span>output2.png<span class="nb">}</span>
+        <span class="k">\vspace</span><span class="nb">{</span>0.5em<span class="nb">}</span>
+        <span class="k">\stepcounter</span><span class="nb">{</span>figure<span class="nb">}</span>
+        <span class="k">\label</span><span class="nb">{</span>fig:ground<span class="nb">_</span>truth<span class="nb">}</span>
+        <span class="c">% 在这里修改图名</span>
+        <span class="k">\noindent\textbf</span><span class="nb">{</span>Figure~<span class="k">\arabic</span><span class="nb">{</span>figure<span class="nb">}</span>:<span class="nb">}</span>
+        <span class="k">\small</span><span class="nb">{</span>实验一迷宫设计图<span class="nb">}</span>
+    <span class="k">\end</span><span class="nb">{</span>minipage<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span>
 </code></pre></div>
-<p>\end{center}</p>
+</div>
 <p><a href="../">返回专业课程列表</a></p>
 
 

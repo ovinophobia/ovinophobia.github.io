@@ -91,6 +91,15 @@ body:has(.home-hero) .md-footer {
   max-width: 1280px;
 }
 
+/* 文章末尾统一返回区域：细分隔线、链接间距和底部留白。 */
+.md-typeset .article-backlink {
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding-top: 1.25rem;
+  padding-bottom: 4rem;
+}
+
 /* 顶部横向导航和左侧导航显示时，增加相同的左侧留白。 */
 @media screen and (min-width: 76.25em) {
   .md-header__inner {
